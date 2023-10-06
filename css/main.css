@@ -36,10 +36,12 @@ header {
 
 #scriptseed-tag {
     font-size: 1.9em;
+
+    transition: color 0.15s;
 }
 
 #scriptseed-tag:hover {
-    color: rgb(37, 37, 37);
+    color: rgb(77, 77, 77);
     cursor: default
 }
 
@@ -49,10 +51,15 @@ header ul li {
 }
 
 header ul li a {
+    color: rgb(0, 140, 255);
     text-decoration: none;
+
+    transition: color 0.15s;
+
 }
 
 header ul li a:hover {
+    color: rgb(0, 76, 255);
     text-decoration: underline;
 }
 
@@ -102,11 +109,12 @@ header ul li a:hover {
     border: 3px solid rgba(186, 186, 186, 0.478);
     border-radius: 5px;
     box-shadow: 0px 1px 5px rgba(186, 186, 186, 0.478);
+
+    transition: border 0.15s, box-shadow 0.15s; 
 }
 
 .container img:hover {
     border: 3px solid rgba(90, 90, 90, 0.478);
-    border-radius: 5px;
     box-shadow: 0px 1px 5px rgba(186, 186, 186, 0.6);
 }
 
