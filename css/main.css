@@ -8,7 +8,7 @@ header {
     align-items: center;
     align-content: center;
     background-color: rgba(255, 255, 255, 0.5);
-    font-family: "Sora", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-weight: 900;
     flex-shrink: 0px;
     width: 100%;
@@ -78,8 +78,8 @@ header ul li a:hover {
 
 #title {
     text-align: center;
-    font-family:'Poppins', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 800;
+    font-family:'Lexend', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 999;
     font-size: 9vw;
     margin: 0;
     /*text-shadow: 0px 1.4px 3px rgba(0, 0, 0, 0.5);*/ 
@@ -87,7 +87,7 @@ header ul li a:hover {
 
 #description {
     text-align: center;
-    font-family: "Poppins";
+    font-family: "Outfit";
     font-weight: 600;
     font-size: 3vw;
     margin: 0, 15px;
@@ -133,31 +133,28 @@ header ul li a:hover {
 }
 
 .button {
-    font-family: "Poppins";
+    font-family: "Outfit";
     font-weight: bold;
     font-size: 1.2rem;
     background-color: rgb(0, 157, 255);
     color: white;
-    border: 3px solid rgb(0, 91, 171);
-    border-radius: 5px;
-    padding: 3vh 4vw;
+    /*border: 3px solid rgb(0, 91, 171);*/
+    border: none;
+    border-radius: 9999px;
+    padding: 2vh 7vw;
     display: block;
     margin: 25px auto;
 
-    transition: padding 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border 0.15s;
+    box-shadow: 0px 0px 15px rgba(67, 117, 254, 0.9);
+
+    transition: padding 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border 0.15s, transform 0.15s
 }
 
 .button:hover {
-    font-family: "Poppins";
-    background-color: white;
-    color: rgb(0, 157, 255);
-    border: 3px solid rgb(0, 91, 171);
-    padding: 3.2vh 4.2vw;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(67, 117, 254, 0.9);
 }
 
 .button:active {
-    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
-    padding: 2.8vh 3.8vw;
-    border: 3px solid rgb(0, 157, 255);
+    transform: scale(.95);
 }
