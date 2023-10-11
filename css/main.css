@@ -26,7 +26,7 @@ header {
     flex-shrink: 0;
 }
 
-#scriptseed-toplogo {
+#scriptseed-topicon {
     height: 40px;
     margin-right: 10px;
     border-radius: 15px;
@@ -36,20 +36,21 @@ header {
     transition: transform 0.15s;
 }
 
-#scriptseed-toplogo:hover {
+#scriptseed-topicon:hover {
     transform: rotate(20deg);
 }
 
-#scriptseed-tag {
+#scriptseed-toplogo {
+    width: 150px;
     font-size: 1.9em;
 
-    transition: color 0.15s;
+    transition: transform 0.15s;
 }
 
-#scriptseed-tag:hover {
-    color: rgb(77, 77, 77);
-    cursor: default
+#scriptseed-toplogo:hover {
+    transform: translateY(-2px);
 }
+
 
 header ul li {
     display: inline;
