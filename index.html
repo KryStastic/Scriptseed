@@ -7,8 +7,7 @@
     <meta name="description" content="The website of the developer Scriptseed! Coming soon... 👀">
     <title>Scriptseed</title>
 
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="css/main.css">
+
 
     <!--Imported Fonts-->
 
@@ -16,27 +15,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&family=Montserrat:wght@400;700&family=Outfit:wght@100;400;500;800;900&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 
+    <!--Styles-->
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
 </head>
 <body>
-    <header>
-        <div id="scriptseed-top">
-            <img id="scriptseed-topicon" src="images/Logo.png">
-            <img id=scriptseed-toplogo src="images/Scriptseed-top.png">
+    <header class="top-header">
+        
+        <div class="left-section">
+
+         <img id="scriptseed-topicon" src="images/Logo.png">
+        <img id=scriptseed-toplogo src="images/Scriptseed-top.png">
+
         </div>
 
-        <nav id="navbar">
-            <ul class="topbar-links">
-                <li><a href="https://www.youtube.com/channel/UCS0Exbm9XX-qZb48-P4xEqQ" target="_blank">YouTube</a></li>
-                <li><a href="#description">Gallery</a> </li>
-                <li><a href="#bottom">WIP </a></li>
-            </ul>
-        </nav>
+        <div class="middle-section">
+            middle section
+        </div>
+
+        <div class="right-section">
+            <nav id="navbar">
+                <ul class="topbar-links">
+                    <li><a href="https://www.youtube.com/channel/UCS0Exbm9XX-qZb48-P4xEqQ" target="_blank">YouTube</a></li>
+                    <li><a href="#description">Gallery</a> </li>
+                    <li><a href="#bottom">WIP </a></li>
+                </ul>
+            </nav>
+        </div>
+
+
     </header>
 
     <main>
     <section id="intruduction">
         <h1 id="title">Hello👋</h1>
-        <p id="description">This is my <em><strong>GALLERY!</strong></em> Have a look! It's  <em><strong>AMAZING!</strong></em></p>
+        <p id="description">This is my <em><strong>GALLERY!&#160;</strong></em> Have a look! It's  <em><strong>AMAZING!</strong></em></p>
     </section>
 
         <div class="container">
@@ -49,9 +67,10 @@
         </div>
 
     </main>
+    <button class="button">Click Me!</button>
+    <footer id="bottom-footer">
 
-    <footer>
-        <button class="button">Click Me!</button>
+        <p id="footer-text">scriptseed 2023</p>
     </footer>
 </body>
 

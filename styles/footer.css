@@ -1,0 +1,11 @@
+#bottom-footer {
+    font-family: "Outfit";
+    background-color: lightcyan;
+    height: 50px;
+}
+
+#footer-text {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: bottom;
+}
