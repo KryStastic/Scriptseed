@@ -8,27 +8,27 @@
     font-family: "Outfit", sans-serif;
     font-weight: 900;
 
-    height: 80px;
-
     border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-
 }
 
 .left-section {
     display: flex;
+    flex: 1;
     justify-content: space-between;
     align-items: center;
-    background-color: lightblue;
-    height: 100%;
 }
 
 .middle-section {
-    background-color: lightpink;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     flex: 1;
+    max-width: 500px;
+    min-width: 150px;
 }
 
 .right-section {
-    background-color: lightblue;
+ flex: 1;
 }
 
 #scriptseed-topicon {
@@ -47,7 +47,6 @@
 
 #scriptseed-toplogo {
     width: 150px;
-
     font-size: 1.9em;
 
     transition: transform 0.15s;
@@ -70,7 +69,6 @@ header ul li a {
     text-decoration: none;
 
     transition: color 0.15s;
-
 }
 
 header ul li a:hover {
