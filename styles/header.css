@@ -1,4 +1,4 @@
-.top-header {
+.header {
     position: fixed;
     top: 0;
     right: 0;
@@ -19,7 +19,6 @@
 .left-section {
     display: flex;
     flex: 1;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -34,6 +33,8 @@
 
 .right-section {
  flex: 1;
+ justify-content: center;
+ align-items: center;
 }
 
 #scriptseed-topicon {
@@ -64,12 +65,17 @@
 /**/
 
 
-header ul li {
+.header ul {
+    text-align: center;
+}
+
+.header ul li {
+    text-align: right;
     display: inline;
     margin: 0 18px;
 }
 
-header ul li a {
+.header ul li a {
     color: rgb(0, 140, 255);
     text-decoration: none;
 
