@@ -1,0 +1,29 @@
+.button {
+    display: block;
+
+    font-family: "Outfit";
+    font-weight: bold;
+    font-size: 25px;
+
+    background-color: rgb(0, 157, 255);
+    color: white;
+
+    border: none;
+    border-radius: 9999px;
+
+    margin: 25px auto;
+    padding: 12px 25px;
+
+    box-shadow: 0px 0px 15px rgba(67, 117, 254, 0.9);
+
+    transition: padding 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border 0.15s, transform 0.15s
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(67, 117, 254, 0.9);
+}
+
+.button:active {
+    transform: scale(.95);
+}

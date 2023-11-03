@@ -13,7 +13,8 @@
     font-family: "Outfit", sans-serif;
     font-weight: 900;
 
-    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 100;
 }
 
 .left-section {
@@ -32,62 +33,54 @@
 }
 
 .right-section {
- flex: 1;
- justify-content: center;
- align-items: center;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 
-#scriptseed-topicon {
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 15px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
-
+.header-logo {
+    width: 130px;
     transition: transform 0.15s;
-}
 
-#scriptseed-topicon:hover {
-    transform: rotate(20deg);
-}
-
-#scriptseed-toplogo {
-    width: 150px;
-    font-size: 1.9em;
-
-    transition: transform 0.15s;
-}
-
-#scriptseed-toplogo:hover {
-    transform: translateY(-2px);
+    margin-left: 10px;
 }
 
 /**/
 
 
-.header ul {
-    text-align: center;
+.header .header-navigation .header-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+
+    list-style: none;
 }
 
-.header ul li {
-    text-align: right;
-    display: inline;
-    margin: 0 18px;
-}
+.header-links a {
+    color: rgb(0, 128, 255);
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    border: 3px solid transparent;
+    border-radius: 5px;
 
-.header ul li a {
-    color: rgb(0, 140, 255);
     text-decoration: none;
 
-    transition: color 0.15s;
+    transition: border-color 0.25s, box-shadow 0.25s;
 }
 
-header ul li a:hover {
-    color: rgb(0, 76, 255);
-    text-decoration: underline;
+.header-links li {
+    transition: transform 0.15s;
 }
 
-#navbar {
-    white-space: nowrap;
-    flex-shrink: 0;
+.header-links a:hover {
+    border-color: rgb(0, 128, 255);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+.header-links li:hover {
+    transform: scale(1.05);
+}
+
+.header-links li:active {
+    transform: scale(0.95);
 }

@@ -23,22 +23,25 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&family=Montserrat:wght@400;700&family=Outfit:wght@100;400;500;800;900&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&family=Montserrat:wght@400;700;900&family=Outfit:wght@100;400;500;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <!--Styles-->
 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/general.css">
+
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/footer.css">
+
+    <link rel="stylesheet" href="styles/main/introduction.css">
+    <link rel="stylesheet" href="styles/main/styles-library.css">
+    <link rel="stylesheet" href="styles/main/info-card.css">
+
 
 </head>
 <body>
     <header class="header">
         <div class="left-section">
-        <img id="scriptseed-topicon" src="images/Logo.png">
-        <img id=scriptseed-toplogo src="images/Scriptseed-top.png">
+        <img class="header-logo" src="images/Scriptseed-long.png">
         </div>
 
         <div class="middle-section">
@@ -46,39 +49,66 @@
         </div>
 
         <div class="right-section">
-            <nav id="navbar">
-                <ul class="topbar-links">
-                    <li><a href="https://www.youtube.com/channel/UCS0Exbm9XX-qZb48-P4xEqQ" target="_blank">YouTube</a></li>
-                    <li><a href="#description">Gallery</a> </li>
-                    <li><a href="#bottom">WIP </a></li>
+            <nav class="header-navigation">
+                <ul class="header-links">
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCS0Exbm9XX-qZb48-P4xEqQ" target="_blank">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#description">
+                            News
+                        </a> 
+                    </li>
+
+                    <li>
+                        <a href="#bottom">
+                            Link
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
-
-
     </header>
 
-    <main>
-    <section id="intruduction">
-        <h1 id="title">Tutorials all in one place </h1>
-        <p id="description">...</p>
+    <main class="main">
+    <section id="introduction">
+        <h1 class="introduction-title">
+            Tutorials all in one place 
+        </h1>
+        <p class="introduction-description">
+            ...
+        </p>
     </section>
 
-        <div class="container">
-            <img src=https://shorturl.at/ipGNX>
-            <img src=https://shorturl.at/ipGNX>
-            <img src=https://shorturl.at/ipGNX>
-            <img src=https://shorturl.at/ipGNX>
-            <img src=https://shorturl.at/ipGNX>
-            <img src=https://shorturl.at/ipGNX>
-        </div>
+    <div class="grid-cards-area">
+        <section class="info-card">
+            <div class="info-card-left">
+                <img class="info-card-image" src="icons/youtube.svg">
+            </div>
+            <div class="info-card-right">
+                <p class="info-card-title">Check us out on YouTube!</p>
+                <p class="info-card-description">Master Roblox development! New videos regurarly</p>
+                <button class="button visit-youtube-button">Visit</button>
+            </div>
+        </section>
+        <section class="info-card">
+            <div class="info-card-left">
+                <img class="info-card-image" src="icons/youtube.svg">
+            </div>
+            <div class="info-card-right">
+                <p class="info-card-title">Check us out on YouTube!</p>
+                <p class="info-card-description">Master Roblox development! New videos regurarly</p>
+                <button class="button visit-youtube-button">Visit</button>
+            </div>
+        </section>
+    </div>
+
 
     </main>
-    <button class="button">Click Me!</button>
-    <footer id="bottom-footer">
 
-        <p id="footer-text">scriptseed 2023</p>
-    </footer>
 </body>
 
 </html>
