@@ -1,35 +1,49 @@
-.grid-cards-area {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
+
+.cards-area {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .info-card {
+    position: relative;
     font-family: "Montserrat";
 
     max-width: 600px;
-    padding: 60px 15px;
     display: flex;
-    justify-content: flex-end;
+    overflow: hidden;
+    justify-content: center;
     align-items: center;
-    flex-grow: 0;
+    padding: 15px;
     border: 3px solid rgb(255, 60, 60);
     border-radius: 20px;
 
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 
     transition: box-shadow 0.15s
+
+}
+
+.info-card::after {
+    overflow: hidden;
+    content: "";
+    border-radius: 20px;
+    position: absolute;
+    inset: 0;
+    background-image: url(/icons/youtube.svg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 90px;
+
+    transform: rotate(10deg);
+    opacity: 0.05;
+    z-index: -1;
 }
 
 .info-card:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
-.info-card-left {
-    flex: 1;
-    max-width: 300px;
-    margin-right: 15px;
-}
 
 .info-card-image {
     filter: invert(.2) sepia(1) saturate(100);
@@ -38,10 +52,11 @@
     height: 100%;
 }
 
-.info-card-right {
+.info-card-main {
     display: flex;
     flex-direction: column;
-    justify-content:start
+    align-items: center;
+    justify-content: center;
 }
 
 .info-card-title {
@@ -52,9 +67,11 @@
 
 .info-card-description {
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .visit-youtube-button {
     margin: 15px;
+    padding: 15px 140px;
+    cursor: pointer;
 }

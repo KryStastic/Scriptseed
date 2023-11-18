@@ -1,4 +1,16 @@
+#introduction h1, p {
+    margin: 0;
+}
+
 .introduction-title {
     font-size: 75px;
     text-align: center;
+    font-weight: 999;
+}
+
+.introduction-description {
+    text-align: center;
+    font-style: italic;
+    font-weight:600;
+    font-size: 45px;
 }

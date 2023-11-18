@@ -9,8 +9,6 @@
     align-content: center;
 
     background-color: white;
-
-    font-family: "Outfit", sans-serif;
     font-weight: 900;
 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -39,7 +37,7 @@
 }
 
 .header-logo {
-    width: 130px;
+    width: 220px;
     transition: transform 0.15s;
 
     margin-left: 10px;
@@ -59,7 +57,8 @@
 .header-links a {
     color: rgb(0, 128, 255);
     background-color: rgba(0, 0, 0, 0.05);
-    padding: 8px;
+    padding: 10px 16px;
+    font-size: 25px;
     border: 3px solid transparent;
     border-radius: 5px;
 
